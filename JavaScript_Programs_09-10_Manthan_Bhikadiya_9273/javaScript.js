@@ -133,3 +133,17 @@ console.log("Hello World");
         console.log(num3 + " is largest");
     }
 }
+
+//13) JavaScript Program to Check Prime Number
+
+{
+    console.log("13) JavaScript Program to Check Prime Number");
+
+    let num = 7
+    let i = 2;
+    for (i; i < num; i++) {
+        if (num % i == 0)
+            break;
+    }
+    num == i ? console.log("Prime Number") : console.log("Not Prime Number");
+}
