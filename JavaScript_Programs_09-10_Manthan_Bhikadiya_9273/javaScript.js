@@ -147,3 +147,48 @@ console.log("Hello World");
     }
     num == i ? console.log("Prime Number") : console.log("Not Prime Number");
 }
+
+// 14) JavaScript Program to Print All Prime Numbers in an Interval
+
+// 15) JavaScript Program to Find the Factorial of a Number
+
+{
+    console.log("15) JavaScript Program to Find the Factorial of a Number");
+    
+    let num=5;
+    let n=1;
+    for (let i = 1; i <= num; i++) {
+        n*=i;
+    }
+    console.log(n);
+}
+
+// 16) JavaScript Program to Display the Multiplication Table
+
+{
+    console.log("16) JavaScript Program to Display the Multiplication Table");
+
+    let num = 5;
+    
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} x ${i} = ${num * i}`);
+    }
+}
+
+// 17) JavaScript Program to Print the Fibonacci Sequence
+
+{
+    console.log("17) JavaScript Program to Print the Fibonacci Sequence");
+    
+    let num =511;
+    let a=0;
+    let b=1;
+    let c=0;
+
+    for(let i=1; i<=num;i++){
+        console.log(a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+}
