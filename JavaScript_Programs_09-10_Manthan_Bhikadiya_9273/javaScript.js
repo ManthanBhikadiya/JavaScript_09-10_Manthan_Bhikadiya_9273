@@ -242,3 +242,38 @@ console.log("Hello World");
 
     console.log("natural numbers is: " + sum);
 }
+
+// 22) JavaScript Program to Check if the Numbers Have Same Last Digit 
+
+{
+    console.log("22) JavaScript Program to Check if the Numbers Have Same Last Digit ");
+
+    let num1=13;
+    let num2=23;
+
+    let lastnum1=num1%10
+    let lastnum2=num2%10
+
+    if(lastnum1===lastnum2){
+        console.log("last digits are seam");  
+    }else{
+        console.log("last digits are not seam");        
+    }
+}
+
+// 23) JavaScript Program to Find HCF or GCD 
+
+{
+    console.log("23) JavaScript Program to Find HCF or GCD");
+
+    let num1=10;
+    let num2=30;
+    let HCF;
+
+    for(let i=1;i<=num1&&num2;i++){
+        if(num1 %i==0 &&num2%i==0){
+            HCF=i;
+        }
+    }
+    console.log("HCF is "+HCF);    
+}
