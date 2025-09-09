@@ -1,13 +1,8 @@
 let balance = 10000;
 
 while (true) {
-    console.log("\nWelcome to ATM");
-    console.log("1. Check Balance");
-    console.log("2. Deposit Money");
-    console.log("3. Withdraw Money");
-    console.log("4. Exit");
-
-    let option = parseInt(prompt("Enter your option (1-4):"));
+    
+    let option = parseInt(prompt("\n1. Check Balance\n2. Deposit Money \n3. Withdraw Money\n4. Exit\n Enter your option:"));
 
     if (option === 1) {
         console.log("Your balance is: $" + balance);
