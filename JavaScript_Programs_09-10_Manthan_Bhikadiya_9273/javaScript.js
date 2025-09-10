@@ -232,7 +232,7 @@ console.log("Hello World");
 
 {
     console.log("21) JavaScript Program to Find the Sum of Natural Numbers ");
-    
+
     let n = 10;
     let sum = 0;
 
@@ -248,16 +248,16 @@ console.log("Hello World");
 {
     console.log("22) JavaScript Program to Check if the Numbers Have Same Last Digit ");
 
-    let num1=13;
-    let num2=23;
+    let num1 = 13;
+    let num2 = 23;
 
-    let lastnum1=num1%10
-    let lastnum2=num2%10
+    let lastnum1 = num1 % 10
+    let lastnum2 = num2 % 10
 
-    if(lastnum1===lastnum2){
-        console.log("last digits are seam");  
-    }else{
-        console.log("last digits are not seam");        
+    if (lastnum1 === lastnum2) {
+        console.log("last digits are seam");
+    } else {
+        console.log("last digits are not seam");
     }
 }
 
@@ -266,14 +266,59 @@ console.log("Hello World");
 {
     console.log("23) JavaScript Program to Find HCF or GCD");
 
-    let num1=10;
-    let num2=30;
+    let num1 = 10;
+    let num2 = 30;
     let HCF;
 
-    for(let i=1;i<=num1&&num2;i++){
-        if(num1 %i==0 &&num2%i==0){
-            HCF=i;
+    for (let i = 1; i <= num1 && num2; i++) {
+        if (num1 % i == 0 && num2 % i == 0) {
+            HCF = i;
         }
     }
-    console.log("HCF is "+HCF);    
+    console.log("HCF is " + HCF);
+}
+
+// 24) JavaScript Program to Find LCM
+{
+    console.log("24) JavaScript Program to Find LCM");
+    
+    let num1 = 15;
+    let num2 = 20;
+    let lcm = 1;
+
+    for (let i = 1; i <= num1 * num2; i++) {
+        if (i % num1 == 0 && i % num2 == 0) {
+            lcm = i;
+        }
+    }
+
+    console.log("LCM is: " + lcm);
+}
+
+// 25) JavaScript Program to Find the Factors of a Number 
+{
+    console.log("25) JavaScript Program to Find the Factors of a Number ");
+    
+    let num = 20;
+    console.log("Factors of a Number are:");
+    
+    for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            console.log(i);
+        }
+    }
+}
+
+// 27) JavaScript Program to Guess a Random Number 
+{
+    console.log("27) JavaScript Program to Guess a Random Number ");
+    let rendomNum=Math.floor(Math.random()*10);
+
+    let guess=prompt("Guess a number(0-10):")
+
+    if (rendomNum==guess){
+        console.log("You are right");
+    }else{
+        console.log("you are wrong the rigt answer is:"+rendomNum);
+    }
 }
