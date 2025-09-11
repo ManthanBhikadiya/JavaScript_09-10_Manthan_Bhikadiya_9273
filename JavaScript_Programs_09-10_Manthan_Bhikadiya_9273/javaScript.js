@@ -281,7 +281,7 @@ console.log("Hello World");
 // 24) JavaScript Program to Find LCM
 {
     console.log("24) JavaScript Program to Find LCM");
-    
+
     let num1 = 15;
     let num2 = 20;
     let lcm = 1;
@@ -298,10 +298,10 @@ console.log("Hello World");
 // 25) JavaScript Program to Find the Factors of a Number 
 {
     console.log("25) JavaScript Program to Find the Factors of a Number ");
-    
+
     let num = 20;
     console.log("Factors of a Number are:");
-    
+
     for (let i = 1; i <= num; i++) {
         if (num % i === 0) {
             console.log(i);
@@ -310,15 +310,70 @@ console.log("Hello World");
 }
 
 // 27) JavaScript Program to Guess a Random Number 
+// {
+//     console.log("27) JavaScript Program to Guess a Random Number");
+
+//     let rendomNum = Math.floor(Math.random() * 10);
+
+//     let guess = prompt("Guess a number(0-10):")
+
+//     if (rendomNum == guess) {
+//         console.log("You are right");
+//     } else {
+//         console.log("you are wrong the rigt answer is:" + rendomNum);
+//     }
+// }
+
+// 31) JavaScript Program to Convert Decimal to Binary
 {
-    console.log("27) JavaScript Program to Guess a Random Number ");
-    let rendomNum=Math.floor(Math.random()*10);
+    console.log("31) JavaScript Program to Convert Decimal to Binary");
 
-    let guess=prompt("Guess a number(0-10):")
+    let Decimal = 10;
 
-    if (rendomNum==guess){
-        console.log("You are right");
+    let Binary = Decimal.toString(2);
+
+    console.log("Decimal = " + Decimal);
+    console.log("Binary = " + Binary);
+}
+
+// 32) JavaScript Program to Find ASCII Value of Character
+{
+    console.log("32) JavaScript Program to Find ASCII Value of Character");
+
+    let Character = "A";
+
+    let ASCII = Character.charCodeAt(0);
+
+    console.log(Character+" ASCII = "+ASCII);
+    
+}
+
+// 33) JavaScript Program to Check Whether a String is Palindrome or Not
+{
+    console.log("33) JavaScript Program to Check Whether a String is Palindrome or Not");
+    
+    let String = "mam";
+
+    let str = String.split("").reverse().join("");
+
+    if(String==str){
+        console.log(String+" is palindorme");
     }else{
-        console.log("you are wrong the rigt answer is:"+rendomNum);
+        console.log(String+" is not palindorme");
     }
+}
+
+// 34) JavaScript Program to Sort Words in Alphabetical Order 
+{
+    console.log("34) JavaScript Program to Sort Words in Alphabetical Order");
+    
+    let str = "n a b k l s f g y u i o  w e r q c d h j m p t v x z";
+    
+    let words = str.split(" ");
+    
+    words.sort();
+    
+    let sortStr = words.join(" ");
+    
+    console.log("Sorted Words: " + sortStr);
 }
