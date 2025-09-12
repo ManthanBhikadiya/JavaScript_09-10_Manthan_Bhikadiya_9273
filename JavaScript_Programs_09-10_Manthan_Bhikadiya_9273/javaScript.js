@@ -367,7 +367,7 @@ console.log("Hello World");
 {
     console.log("34) JavaScript Program to Sort Words in Alphabetical Order");
     
-    let str = "n a b k l s f g y u i o  w e r q c d h j m p t v x z";
+    let str = "n a b k l s f g y u i o w e r q c d h j m p t v x z";
     
     let words = str.split(" ");
     
