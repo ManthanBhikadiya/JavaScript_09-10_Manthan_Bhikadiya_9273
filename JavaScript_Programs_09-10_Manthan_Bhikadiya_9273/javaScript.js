@@ -344,36 +344,85 @@ console.log("Hello World");
 
     let ASCII = Character.charCodeAt(0);
 
-    console.log(Character+" ASCII = "+ASCII);
-    
+    console.log(Character + " ASCII = " + ASCII);
+
 }
 
 // 33) JavaScript Program to Check Whether a String is Palindrome or Not
 {
     console.log("33) JavaScript Program to Check Whether a String is Palindrome or Not");
-    
+
     let String = "mam";
 
     let str = String.split("").reverse().join("");
 
-    if(String==str){
-        console.log(String+" is palindorme");
-    }else{
-        console.log(String+" is not palindorme");
+    if (String == str) {
+        console.log(String + " is palindorme");
+    } else {
+        console.log(String + " is not palindorme");
     }
 }
 
 // 34) JavaScript Program to Sort Words in Alphabetical Order 
 {
     console.log("34) JavaScript Program to Sort Words in Alphabetical Order");
-    
+
     let str = "n a b k l s f g y u i o w e r q c d h j m p t v x z";
-    
+
     let words = str.split(" ");
-    
+
     words.sort();
-    
+
     let sortStr = words.join(" ");
-    
+
     console.log("Sorted Words: " + sortStr);
+}
+
+// 35) JavaScript Program to Replace Characters of a String
+{
+    console.log("35) JavaScript Program to Replace Characters of a String");
+
+    let String = "hello world";
+
+    let String1 = String.replace("h", "H");
+
+    console.log(String1);
+}
+
+// 36) JavaScript Program to Reverse a String
+{
+    console.log("36) JavaScript Program to Reverse a String");
+
+    let String = "hello world";
+
+    let String1 = String.split("").reverse().join("");
+
+    console.log(String1);
+}
+
+// 39) JavaScript Program to Convert the First Letter of a String into UpperCase
+{
+    console.log("39) JavaScript Program to Convert the First Letter of a String into UpperCase");
+
+    let String = "hello world";
+
+    let String1 = String.charAt(0).toUpperCase() + String.slice(1);
+    console.log(String1);
+}
+
+// 40) JavaScript Program to Count the Number of Vowels in a String
+{
+    console.log("40) JavaScript Program to Count the Number of Vowels in a String");
+    
+    let String = "hello world";
+
+    let vowels = "aeiou";
+    let count = 0;
+
+    for (let i = 0; i < String.length; i++) {
+        if (vowels.includes(String[i])) {
+            count++;
+        }
+    }
+    console.log(`number of vowels: ${count}`);
 }
