@@ -413,7 +413,7 @@ console.log("Hello World");
 // 40) JavaScript Program to Count the Number of Vowels in a String
 {
     console.log("40) JavaScript Program to Count the Number of Vowels in a String");
-    
+
     let String = "hello world";
 
     let vowels = "aeiou";
@@ -425,4 +425,42 @@ console.log("Hello World");
         }
     }
     console.log(`number of vowels: ${count}`);
+}
+
+{
+    console.log("42) JavaScript Program to Check Whether a String Starts and Ends With Certain Characters");
+
+    let str = "Hello World";
+    let start = "Hello";
+    let end = "World";
+
+    let startsWith = str.startsWith(start);
+    let endsWith = str.endsWith(end);
+
+    if (startsWith && endsWith) {
+        console.log("Yes");
+    } else {
+        console.log("No");
+    }
+}
+
+{
+    console.log("49) JavaScript Program to Replace All Occurrences of a String");
+    
+    let Str = "Hello JavaScript hi JavaScript";
+
+    let newStr = Str.replaceAll("JavaScript", "Css");
+
+    console.log(newStr);
+}
+
+{
+    console.log("50) JavaScript Program to Create Multiline Strings ");
+    
+    let str =`            This 
+             is 
+          Multiline
+           Strings`
+
+    console.log(str);   
 }
