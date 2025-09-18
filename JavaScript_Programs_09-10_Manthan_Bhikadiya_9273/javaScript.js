@@ -446,7 +446,7 @@ console.log("Hello World");
 
 {
     console.log("49) JavaScript Program to Replace All Occurrences of a String");
-    
+
     let Str = "Hello JavaScript hi JavaScript";
 
     let newStr = Str.replaceAll("JavaScript", "Css");
@@ -456,11 +456,82 @@ console.log("Hello World");
 
 {
     console.log("50) JavaScript Program to Create Multiline Strings ");
-    
-    let str =`            This 
+
+    let str = `            This 
              is 
           Multiline
            Strings`
 
-    console.log(str);   
+    console.log(str);
+}
+
+{
+    console.log("52) JavaScript Program to Generate Random String");
+
+    let char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charLength = char.length;
+    let result = '';
+    let strLength = 10;
+
+    for (let i = 0; i < strLength; i++) {
+        let randomIndex = Math.floor(Math.random() * charLength);
+        result += char[randomIndex];
+    }
+
+    console.log(result);
+}
+
+{
+    console.log("53) JavaScript Program to Check if a String Starts With Another String");
+
+    let str = "Hello World";
+    let startStr = "Hello";
+
+    let result = str.startsWith(startStr);
+
+    console.log(result);
+}
+
+{
+    console.log("54) JavaScript Program to Trim a String");
+
+    let str = "       Hello World     "
+
+    let result = str.trim();
+
+    console.log(str);
+    console.log(result);
+}
+
+{
+    console.log("56) JavaScript Program to Check Whether a String Contains a Substring");
+
+    let str = "Hello World";
+    let substr = "World";
+
+    let result = str.includes(substr);
+
+    console.log(result);
+}
+
+{
+    console.log("57) JavaScript Program to Compare Two Strings");
+
+    let str = "Hello World";
+    let str1 = "Hello World";
+
+    let result = str === str1;
+
+    console.log(result);
+}
+
+{
+    console.log("58) JavaScript Program to Encode a String to Base64");
+
+    let str ="Hello World"
+
+    let Base64 = btoa(str)
+
+    console.log(Base64);
+    
 }
