@@ -528,10 +528,60 @@ console.log("Hello World");
 {
     console.log("58) JavaScript Program to Encode a String to Base64");
 
-    let str ="Hello World"
+    let str = "Hello World";
 
-    let Base64 = btoa(str)
+    let Base64 = btoa(str);
 
     console.log(Base64);
-    
+
 }
+
+{
+    console.log("59) JavaScript Program to Replace all Instances of a Character in a String");
+
+    let str = "Hello World";
+
+    let result = str.replaceAll("l", "a");
+
+    console.log(result);
+}
+
+{
+    console.log("61) JavaScript Program to Display Date and Time");
+
+    let now = new Date();
+
+    let date = now.getDate();
+    let date1 = now.getMonth() + 1;
+    let date2 = now.getFullYear();
+    let date3 = now.getHours();
+    let date4 = now.getMinutes();
+    let date5 = now.getSeconds();
+
+    console.log(`${date}/${date1}/${date2} ${date3}:${date4}:${date5}`);
+}
+
+{
+    console.log("62) JavaScript Program to Check Leap Year");
+
+    let Year = 2025;
+
+    if (Year % 4 == 0) {
+        console.log(Year + " is leap year");
+    } else {
+        console.log(Year + " is not leap year");
+    }
+}
+
+{
+    console.log("63) JavaScript Program to Format the Date");
+
+    let now = new Date();
+
+    let date = now.getDate();
+    let date1 = now.getMonth() + 1;
+    let date2 = now.getFullYear();
+
+    console.log(`${date}/${date1}/${date2}`)
+}
+
