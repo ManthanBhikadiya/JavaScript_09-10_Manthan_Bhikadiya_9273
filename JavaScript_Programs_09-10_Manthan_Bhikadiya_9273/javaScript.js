@@ -583,5 +583,17 @@ console.log("Hello World");
     let date2 = now.getFullYear();
 
     console.log(`${date}/${date1}/${date2}`)
+    console.log(`${date2}/${date1}/${date}`)
 }
 
+{
+    console.log("64) Javascript Program to Display Current Date");
+
+    let now = new Date();
+
+    let date = now.getDate();
+    let date1 = now.getMonth() + 1;
+    let date2 = now.getFullYear();
+
+    console.log(`${date}/${date1}/${date2}`)
+}
