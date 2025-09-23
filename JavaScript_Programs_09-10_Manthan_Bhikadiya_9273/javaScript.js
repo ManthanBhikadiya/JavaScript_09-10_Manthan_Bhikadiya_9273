@@ -597,3 +597,54 @@ console.log("Hello World");
 
     console.log(`${date}/${date1}/${date2}`)
 }
+
+{
+    console.log("67) JavaScript Program to Remove Specific Item From an Array");
+
+    function remove(arr, ItemtoRemove) {
+        return arr.filter(item => item !== ItemtoRemove);
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let ItemtoRemove = 5;
+    let newArr = remove(arr, ItemtoRemove);
+
+    console.log(newArr);
+}
+
+{
+    console.log("68) JavaScript Program to Check if An Array Contains a Specified Value");
+
+    function Check(arr, value) {
+        return arr.includes(value);
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    console.log(Check(arr, 5));
+    console.log(Check(arr, 10));
+}
+
+{
+    console.log("69) JavaScript Program to Insert Item in an Array");
+
+    function insert(arr, value) {
+        arr.push(value);
+        return arr;
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    console.log(insert(arr, 10));
+}
+
+{
+    console.log("72) JavaScript Program to Empty an Array");
+
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    console.log(arr);
+    
+    arr.length = 0;
+
+    console.log(arr);   
+}
