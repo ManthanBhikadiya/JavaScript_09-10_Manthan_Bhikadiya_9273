@@ -643,8 +643,68 @@ console.log("Hello World");
 
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     console.log(arr);
-    
+
     arr.length = 0;
 
-    console.log(arr);   
+    console.log(arr);
+}
+
+{
+    console.log("73) JavaScript Program to Add Element to Start of an Array");
+
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    console.log(arr);
+
+    arr.unshift(0);
+    console.log(arr);
+}
+
+{
+    console.log("74) JavaScript Program to Remove Duplicates From Array");
+
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 6, 7, 8, 9];
+
+    let uniqueArr = arr.filter((value, index) => arr.indexOf(value) === index);
+
+    console.log(uniqueArr);
+}
+
+{
+    console.log("75) JavaScript Program to Merge Two Arrays and Remove Duplicate Items");
+
+    let arr1 = [1, 2, 3, 4, 5];
+    let arr2 = [4, 5, 6, 7, 8];
+
+    let merged = arr1.concat(arr2);
+
+    let uniqueArr = merged.filter((value, index) => merged.indexOf(value) === index);
+
+    console.log(uniqueArr);
+}
+
+{
+    console.log("76) JavaScript Program to Sort Array of Objects by Property Values");
+
+    let arr = [
+        { name: "John", age: 30 },
+        { name: "Jane", age: 25 },
+        { name: "Jim", age: 35 }
+    ];
+    arr.sort((a, b) => a.age - b.age);
+
+    console.log(arr);
+}
+
+{
+    console.log("77) JavaScript Program to Create Two Dimensional Array");
+
+    let arr = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+    console.log(arr[0]);
+    console.log(arr[0][0]);
+    console.log(arr[1]);
+    console.log(arr[2]);
 }
