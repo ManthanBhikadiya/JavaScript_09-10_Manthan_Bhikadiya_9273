@@ -41,7 +41,7 @@
     console.log(capitalize("hello world"));
 }
 
-console.log("arrow function");
+console.log("----------arrow function----------");
 
 
 // Simple Addition Function
