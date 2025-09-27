@@ -753,7 +753,7 @@ console.log("Hello World");
 
 {
     console.log("85) JavaScript Program To Check If A Variable Is undefined or null");
-    
+
     let var1;
     let var2 = null;
     let var3 = 10;
@@ -766,8 +766,8 @@ console.log("Hello World");
 
 {
     console.log("86) JavaScript Program to Set a Default Parameter Value For a Function");
-    
-    function greet(name ="") {
+
+    function greet(name = "") {
         return `Hello, ${name}!`;
     }
     console.log(greet());
@@ -786,13 +786,13 @@ console.log("Hello World");
 
 {
     console.log("89) JavaScript Program To Get The Current URL");
-    
+
     console.log(window.location.href);
 }
 
 {
     console.log("90) JavaScript Program to Validate An Email Address");
-    
+
     function validateEmail(email) {
         let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
@@ -804,24 +804,72 @@ console.log("Hello World");
 
 {
     console.log("91) JavaScript Program to Check If a Variable is of Function Type");
-    
-    let var1 = function() { };
+
+    let var1 = function () { };
     console.log(typeof var1 === "function");
 }
 
 {
     console.log("92) JavaScript Program To Work With Constants");
-    
+
     const PI = 3.14;
     // PI = 3.15;
     console.log(PI);
 }
 
+// {
+//     console.log("93) JavaScript Program to Pass Parameter to a setTimeout() Function");
+
+//     function greet(name) {
+//         console.log(`Hello, ${name}!`);
+//     }
+//     setTimeout(greet, 2301, "John");
+// }
+
 {
-    console.log("93) JavaScript Program to Pass Parameter to a setTimeout() Function");
-    
-    function greet(name) {
-        console.log(`Hello, ${name}!`);
+    console.log("94) JavaScript Program to Generate a Range of Numbers and Characters");
+
+    function Range(start, end) {
+        let Array = [];
+        for (let i = start; i <= end; i++) {
+            Array.push(i);
+        }
+        return Array;
     }
-    setTimeout(greet, 2301, "John");
+    console.log(Range(1, 10));
+    console.log(Range('a'.charCodeAt(0), 'z'.charCodeAt(0)).map(code => String.fromCharCode(code)));
+}
+
+{
+    console.log("95) JavaScript Program to Perform Function Overloading");
+
+    function add(a, b, c) {
+        if (c !== undefined) {
+            return a + b + c;
+        } else {
+            return a + b;
+        }
+    }
+
+    console.log(add(1, 2));
+    console.log(add(1, 2, 3));
+}
+
+{
+    console.log("98) JavaScript Program to Check if a Number is Float or Integer");
+
+    function isInteger(num) {
+        return Number.isInteger(num);
+    }
+    function isFloat(num) {
+        return !Number.isInteger(num);
+    }
+
+    let num = 10.6
+
+    if (isInteger(num)) {
+        console.log(num + " is integer");
+    } else if (isFloat(num)) {
+        console.log(num + " is float");
+    }
 }
