@@ -86,6 +86,14 @@ console.log("Hello World");
     console.log(Fahrenheit);
 }
 
+{
+    console.log("9) Javascript Program to Generate a Random Number");
+
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+
+    console.log(randomNum);
+}
+
 // 10) Javascript Program to Check if a number is Positive, Negative, or Zero
 
 {
@@ -150,6 +158,24 @@ console.log("Hello World");
 
 // 14) JavaScript Program to Print All Prime Numbers in an Interval
 
+{
+    console.log("14) JavaScript Program to Print All Prime Numbers in an Interval");
+
+    let min = 10;
+    let max = 50;
+
+    for (let num = min; num <= max; num++) {
+        let i = 2;
+        for (i; i < num; i++) {
+            if (num % i == 0)
+                break;
+        }
+        if (num == i) {
+            console.log(num);
+        }
+    }
+}
+
 // 15) JavaScript Program to Find the Factorial of a Number
 
 {
@@ -193,6 +219,44 @@ console.log("Hello World");
     }
 }
 
+{
+    console.log("18) JavaScript Program to Check Armstrong Number");
+
+    let num = 153;
+    let sum = 0;
+    let temp = num;
+    let rem;
+    while (temp > 0) {
+        rem = temp % 10;
+        sum += rem * rem * rem;
+        temp = parseInt(temp / 10);
+    }
+    if (sum == num) {
+        console.log(num + " is armstrong number");
+    } else {
+        console.log(num + " is not armstrong number");
+    }
+}
+
+{
+    console.log("19) JavaScript Program to Find Armstrong Number in an Interval");
+
+    let min = 100;
+    let max = 500;
+    for (let num = min; num <= max; num++) {
+        let sum = 0;
+        let temp = num;
+        let rem;
+        while (temp > 0) {
+            rem = temp % 10;
+            sum += rem * rem * rem;
+            temp = parseInt(temp / 10);
+        }
+        if (sum == num) {
+            console.log(num + " is armstrong number");
+        }
+    }
+}
 // 20) JavaScript Program to Make a Simple Calculator
 
 // {
@@ -309,6 +373,20 @@ console.log("Hello World");
     }
 }
 
+{
+    console.log("26) JavaScript Program to Find Sum of Natural Numbers Using Recursion");
+
+    function sum(n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return n + sum(n - 1);
+        }
+    }
+    let num = 10;
+    console.log("Sum of Natural Numbers is: " + sum(num));
+}
+
 // 27) JavaScript Program to Guess a Random Number 
 // {
 //     console.log("27) JavaScript Program to Guess a Random Number");
@@ -323,6 +401,34 @@ console.log("Hello World");
 //         console.log("you are wrong the rigt answer is:" + rendomNum);
 //     }
 // }
+
+{
+    console.log("29) JavaScript Program to Display Fibonacci Sequence Using Recursion");
+
+    function fibonacci(n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+    let num = 10;
+    console.log("fibonacci is: " + fibonacci(num));
+}
+
+{
+    console.log("30) JavaScript Program to Find Factorial of Number Using Recursion");
+
+    function factorial(n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+    let num = 5;
+    console.log("Factorial is: " + factorial(num));
+}
 
 // 31) JavaScript Program to Convert Decimal to Binary
 {
@@ -398,6 +504,58 @@ console.log("Hello World");
     let String1 = String.split("").reverse().join("");
 
     console.log(String1);
+}
+
+{
+    console.log("37) JavaScript Program to Create Objects in Different Ways");
+    
+    // 1) object literal
+    let obj1 = {
+        name: "manthan",
+        age: 19
+    };
+    console.log(obj1);
+    // 2) object constructor
+    let obj2 = new Object();
+    obj2.name = "manthan";
+    obj2.age = 19;
+    console.log(obj2);
+    // 3) object create method
+    let obj3 = Object.create(null);
+    obj3.name = "manthan";
+    obj3.age = 19;
+    console.log(obj3);
+    // 4) class
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
+    let obj4 = new Person("manthan", 19);
+    console.log(obj4);
+    // 5) function constructor
+    function Person1(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    let obj5 = new Person1("manthan", 19);
+    console.log(obj5);
+}
+
+{
+    console.log("38) JavaScript Program to Check the Number of Occurrences of a Character in the String");
+    
+    let String = "hello world";
+
+    let char = "l";
+    let count = 0;
+    for (let i = 0; i < String.length; i++) {
+        if (String[i] === char) {
+            count++;
+        }
+    }
+    console.log(`number of ${char} is: ${count}`);
 }
 
 // 39) JavaScript Program to Convert the First Letter of a String into UpperCase
@@ -872,4 +1030,20 @@ console.log("Hello World");
     } else if (isFloat(num)) {
         console.log(num + " is float");
     }
+}
+
+{
+    console.log("101) JavaScript Program to Remove All Whitespaces From a Text");
+
+    let str = "  Hello    World ";
+
+    let newStr = str.replace(/\s+/g, '');
+
+    console.log(newStr);
+}
+
+{
+    console.log("102) JavaScript Program to Write to Console");
+
+    console.log("Hellow World");
 }
