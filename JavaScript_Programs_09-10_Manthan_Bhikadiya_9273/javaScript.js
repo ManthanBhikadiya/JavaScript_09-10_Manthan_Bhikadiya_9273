@@ -586,6 +586,18 @@ console.log("Hello World");
 }
 
 {
+    console.log("41) JavaScript Program to Remove a Property from an Object");
+    
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+    console.log("Before removing property: ", obj);
+    delete obj.age;
+    console.log("After removing property: ", obj);  
+}
+
+{
     console.log("42) JavaScript Program to Check Whether a String Starts and Ends With Certain Characters");
 
     let str = "Hello World";
@@ -600,6 +612,85 @@ console.log("Hello World");
     } else {
         console.log("No");
     }
+}
+
+{
+    console.log("43) JavaScript Program to Check if a Key Exists in an Object");
+    
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+
+    let key = "age";
+    let exists = key in obj;
+
+    console.log(exists);
+}
+
+{
+    console.log("44) JavaScript Program to Clone a JS Object");
+
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+    let cloneObj = { ...obj };
+
+    console.log(cloneObj);
+}
+
+{
+    console.log("45) JavaScript Program to Loop Through an Object");
+    
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+    for (let key in obj) {
+        console.log(`${key}: ${obj[key]}`);
+    }
+}
+
+{
+    console.log("46) JavaScript Program to Merge Property of Two Objects");
+    
+    let obj1 = {
+        name: "manthan",
+        age: 19
+    };
+    let obj2 = {
+        city: "surat",
+        country: "india"
+    };
+    let mergedObj = { ...obj1, ...obj2 };
+
+    console.log(mergedObj);
+}
+
+{
+    console.log("47) JavaScript Program to Count the Number of Keys/Properties in an Object");
+    
+    let obj = {
+        name: "manthan",
+        age: 19,
+        city: "surat"
+    };
+    let count = Object.keys(obj).length;
+
+    console.log(count);
+}
+
+{
+    console.log("48) JavaScript Program to Add Key/Value Pair to an Object");
+    
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+    obj.city = "surat";
+
+    console.log(obj);
 }
 
 {
