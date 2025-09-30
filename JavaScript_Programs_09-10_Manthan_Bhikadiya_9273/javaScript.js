@@ -508,7 +508,7 @@ console.log("Hello World");
 
 {
     console.log("37) JavaScript Program to Create Objects in Different Ways");
-    
+
     // 1) object literal
     let obj1 = {
         name: "manthan",
@@ -545,7 +545,7 @@ console.log("Hello World");
 
 {
     console.log("38) JavaScript Program to Check the Number of Occurrences of a Character in the String");
-    
+
     let String = "hello world";
 
     let char = "l";
@@ -587,14 +587,14 @@ console.log("Hello World");
 
 {
     console.log("41) JavaScript Program to Remove a Property from an Object");
-    
+
     let obj = {
         name: "manthan",
         age: 19
     };
     console.log("Before removing property: ", obj);
     delete obj.age;
-    console.log("After removing property: ", obj);  
+    console.log("After removing property: ", obj);
 }
 
 {
@@ -616,7 +616,7 @@ console.log("Hello World");
 
 {
     console.log("43) JavaScript Program to Check if a Key Exists in an Object");
-    
+
     let obj = {
         name: "manthan",
         age: 19
@@ -642,7 +642,7 @@ console.log("Hello World");
 
 {
     console.log("45) JavaScript Program to Loop Through an Object");
-    
+
     let obj = {
         name: "manthan",
         age: 19
@@ -654,7 +654,7 @@ console.log("Hello World");
 
 {
     console.log("46) JavaScript Program to Merge Property of Two Objects");
-    
+
     let obj1 = {
         name: "manthan",
         age: 19
@@ -670,7 +670,7 @@ console.log("Hello World");
 
 {
     console.log("47) JavaScript Program to Count the Number of Keys/Properties in an Object");
-    
+
     let obj = {
         name: "manthan",
         age: 19,
@@ -683,7 +683,7 @@ console.log("Hello World");
 
 {
     console.log("48) JavaScript Program to Add Key/Value Pair to an Object");
-    
+
     let obj = {
         name: "manthan",
         age: 19
@@ -753,6 +753,18 @@ console.log("Hello World");
 }
 
 {
+    console.log("55) JavaScript Program to Convert Objects to Strings");
+
+    let obj = {
+        name: "manthan",
+        age: 19
+    };
+    let str = JSON.stringify(obj);
+    console.log(str);
+    console.log(typeof str);
+}
+
+{
     console.log("56) JavaScript Program to Check Whether a String Contains a Substring");
 
     let str = "Hello World";
@@ -791,6 +803,16 @@ console.log("Hello World");
     let str = "Hello World";
 
     let result = str.replaceAll("l", "a");
+
+    console.log(result);
+}
+
+{
+    console.log("60) JavaScript Program to Replace All Line Breaks with a space");
+
+    let str = `Hello
+    World`;
+    let result = str.replace(/\n/g, ' ');
 
     console.log(result);
 }
@@ -888,6 +910,18 @@ console.log("Hello World");
 }
 
 {
+    console.log("70) JavaScript Program to Append an Object to an Array");
+    
+    function append(arr, obj) {
+        arr.push(obj);
+        return arr;
+    }
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let obj = { name: "manthan", age: 19 };
+    console.log(append(arr, obj));
+}
+
+{
     console.log("72) JavaScript Program to Empty an Array");
 
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -974,6 +1008,25 @@ console.log("Hello World");
 
     console.log(extractValues(arr, "name"));
     console.log(extractValues(arr, "age"));
+}
+
+{
+    console.log("79) JavaScript Program to Compare Elements of Two Arrays");
+    
+    function compareArrays(arr1, arr2) {
+        if (arr1.length !== arr2.length) {
+            return false;
+        }   
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    let arr1 = [1, 2, 3, 4, 5];
+    let arr2 = [1, 2, 3, 4, 5];
+    console.log(compareArrays(arr1, arr2));
 }
 
 {
