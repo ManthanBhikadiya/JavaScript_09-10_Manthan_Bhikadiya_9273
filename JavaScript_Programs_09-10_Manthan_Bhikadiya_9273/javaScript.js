@@ -969,7 +969,7 @@ console.log("Hello World");
     console.log("76) JavaScript Program to Sort Array of Objects by Property Values");
 
     let arr = [
-        { name: "John", age: 30 },
+        { name: "Meet", age: 30 },
         { name: "Jane", age: 25 },
         { name: "Jim", age: 35 }
     ];
@@ -1001,7 +1001,7 @@ console.log("Hello World");
     }
 
     let arr = [
-        { name: "John", age: 30 },
+        { name: "Meet", age: 30 },
         { name: "Jane", age: 25 },
         { name: "Jim", age: 35 }
     ];
@@ -1073,7 +1073,7 @@ console.log("Hello World");
         return `Hello, ${name}!`;
     }
     console.log(greet());
-    console.log(greet("John"));
+    console.log(greet("Meet"));
     console.log(greet("Ron"));
 }
 
@@ -1125,7 +1125,7 @@ console.log("Hello World");
 //     function greet(name) {
 //         console.log(`Hello, ${name}!`);
 //     }
-//     setTimeout(greet, 2301, "John");
+//     setTimeout(greet, 2301, "Meet");
 // }
 
 {

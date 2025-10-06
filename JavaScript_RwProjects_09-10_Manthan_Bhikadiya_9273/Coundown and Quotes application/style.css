@@ -1,0 +1,88 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
+    margin-bottom: 30px;
+}
+
+.countdown h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#quoteDisplay {
+    font-style: italic;
+    margin: 15px 0px;
+}
+
+#newQuoteBtn {
+    background-color: blue;
+}
+
+#newQuoteBtn:hover {
+    background-color: darkblue;
+}
+
+.number {
+    width: 60px;
+    padding: 5px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+}

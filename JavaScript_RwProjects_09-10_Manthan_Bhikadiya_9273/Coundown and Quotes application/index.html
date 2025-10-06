@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coundown & Quotes application</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Coundown & Quotes application</h1>
+        <div class="countdown">
+            <h2>Countdown Timer</h2>
+            <div>Enter The Time</div>
+            <input class="number" id="hours" placeholder="Hours" min="0">
+            <input class="number" id="minutes" placeholder="Minutes" min="0" max="59">
+            <input class="number" id="seconds" placeholder="Seconds" min="0" max="59">
+            <br>
+            <div id="timer">00:00:00</div>
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="quotes">
+            <h2>Random Quote Generator</h2>
+            <div id="quoteDisplay">Click the button to get a random quote!</div>
+            <button id="newQuoteBtn">New Quote</button>
+        </div>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
