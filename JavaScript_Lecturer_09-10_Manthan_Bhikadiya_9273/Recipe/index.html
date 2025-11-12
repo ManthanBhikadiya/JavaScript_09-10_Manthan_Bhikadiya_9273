@@ -11,15 +11,28 @@
 <body>
     <div class="container">
         <h1 class="heading">Recipe Book</h1>
-        <p class="subheading">Click Button for Recipe</p>
-        <button id="fetchbtn">Fetch Recipe</button>
-        <div id="loader" class="loader hidden">Loading....</div>
+        <p class="subheading">Click a button to get a recipe</p>
+
+        <div class="button-group">
+            <button id="fetchbtn1">Quinoa Salad with Avocado</button>
+            <button id="fetchbtn2">Tomato Basil Bruschetta</button>
+            <button id="fetchbtn3">Shrimp Scampi Pasta</button>
+        </div>
+
+        <div id="loader" class="loader hidden">Loading...</div>
+
         <div id="recipes" class="hidden">
+            <h2 id="recipeName"></h2>
             <img id="img" src="" alt="Recipe Image">
-            <h2 id="Ingrediants"></h2>
+
+            <h3>Ingredients:</h3>
+            <ul id="Ingrediants"></ul>
+
+            <h3>Instructions:</h3>
             <p id="Instuctions"></p>
         </div>
     </div>
+
     <script src="./script.js"></script>
 </body>
 
