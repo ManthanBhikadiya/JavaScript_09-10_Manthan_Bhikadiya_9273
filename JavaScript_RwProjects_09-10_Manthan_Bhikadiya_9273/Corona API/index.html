@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-lg w-full bg-gray-50 p-6 rounded-xl shadow-lg ">
+
+        <h1 class="text-3xl font-semibold text-center text-gray-800 mb-6">
+            Corona Tracker
+        </h1>
+
+        <div class="flex gap-3 mb-4">
+            <input id="country_Name"
+                type="text"
+                placeholder="Enter country name"
+                class="flex-1 p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none">
+            
+            <button id="Search"
+                class="px-5 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                Search
+            </button>
+        </div>
+
+        <div id="error" class="text-red-600 text-center font-medium mb-3"></div>
+
+        <div id="all_Data"></div>
+
+    </div>
+
+    <script src="./javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>
+</body>
+
+</html>
