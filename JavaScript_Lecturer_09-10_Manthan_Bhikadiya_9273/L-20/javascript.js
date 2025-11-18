@@ -1,5 +1,5 @@
 const button = document.getElementById('btn');
-const result = document.getElementById('lodedata');
+const result = document.getElementById('loaddata');
 
 button.addEventListener('click', () => {
     const http= new XMLHttpRequest();
