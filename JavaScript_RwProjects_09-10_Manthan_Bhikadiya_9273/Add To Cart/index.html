@@ -2,252 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add to cart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketo Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/6f7d0e203c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-700">
-  <div class="w-full bg-gray-100 py-2 text-sm">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
-
-      <div class="flex space-x-6 text-gray-600">
-        <span class="flex items-center gap-2"><i class="fa-solid fa-truck"></i> Free Delivery</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-rotate-left"></i> Returns Policy</span>
-
-        <span class="flex items-center gap-2">Follow Us
-          <div class="flex items-center gap-2">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
-          </div>
-        </span>
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex gap-96">
+      <div>
+        <h1 class="text-3xl font-extrabold">
+          Marketo<span class="text-yellow-400">.</span>
+        </h1>
       </div>
-      <a href="" class="text-gray-600">Login/Register</a>
-    </div>
-  </div>
 
-  <div class="bg-white py-6 ">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4">
-
-      <h1 class="text-3xl font-bold">Marketo.</h1>
-
-      <div class="flex items-center space-x-3 w-3/4">
-
-        <button class="flex items-center text-nowrap bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded">
-          <i class="fa-solid fa-bars mr-2"></i>
-          All Categories
-          <i class="fa-solid fa-angle-down ml-2"></i>
+      <div class="flex items-center gap-3">
+        <input type="text" placeholder="Search products..." class="w-full border rounded-lg px-4 py-2 outline-none" />
+        <button class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-lg">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-
-        <div class="flex w-full border rounded overflow-hidden bg-white">
-
-          <input type="text" placeholder="Find your product" class="w-full px-3 py-2 outline-none">
-
-          <button class="bg-yellow-400 hover:bg-yellow-500 px-5 flex items-center justify-center text-white">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
       </div>
+    </div>
+  </header>
 
-      <button class="flex items-center text-nowrap bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded">
-        <span class="font-semibold text-nowrap">BLACK FRIDAY</span><br>
-        <span class="text-xs text-nowrap">Get 45% Off</span>
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold mb-6">Shop</h2>
+
+    <div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    </div>
+  </main>
+
+  <div class="fixed top-0 right-0 w-80 h-full bg-white shadow-2xl flex flex-col z-50">
+    <div class="p-5 border-b">
+      <h2 class="text-xl font-bold">Your Cart</h2>
+    </div>
+
+    <div id="cartItems" class="flex-1 overflow-y-auto p-4 space-y-4"></div>
+
+    <div class="border-t p-4">
+      <div class="flex justify-between font-semibold text-lg mb-3">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-white py-3 rounded-lg font-semibold">
+        Checkout
       </button>
-
     </div>
   </div>
 
-  <div>
-    <div class="max-w-7xl mx-auto px-4 py-4 text-gray-500 text-sm">
-      Home > Shop
-    </div>
-    <div>
-      
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center pb-4">
-
-    <h2 class="text-xl font-semibold">Shop</h2>
-
-    <div class="flex items-center space-x-6">
-
-      <div class="flex items-center gap-2 font-semibold">
-        <span>Sort by</span>
-        <span>Sorting</span>
-        <a href=""><i class="fa-solid fa-angle-down ml-2"></i></a>
-      </div>
-
-      <div class="flex space-x-2 items-center justify-between">
-        <p class="font-semibold">view</p>
-        <button class="p-2 rounded"><i class="text-yellow-400 fa-solid fa-table-cells"></i></button>
-        <button class="p-2 rounded"><i class="text-gray-400 fa-solid fa-bars"></i></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-4 pb-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-      <div class="bg-white p-4 rounded shadow relative">
-        <span class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full">
-          Sale!
-        </span>
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">3D Glass</h3>
-        <p class="text-gray-400 line-through inline">$640.00</p>
-        <p class="text-green-600 font-semibold inline">$540.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">3D VR Glass</h3>
-        <p class="text-green-600 font-semibold">$245.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow relative">
-        <span class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full">
-          Sale!
-        </span>
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">7th Generation</h3>
-        <p class="text-gray-400 line-through inline">$560.00</p>
-        <p class="text-green-600 font-semibold inline">$520.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <img src="./img/laptop.jpg" class="w-full mb-3" alt="">
-        <h3 class="font-semibold">Apple iPhone 6s</h3>
-        <p class="text-green-600 font-semibold">$299.00</p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-white  mt-10">
-    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
-
-      <div>
-        <p class="text-gray-500">Got Question? Call us 24/7</p>
-        <p class="text-2xl font-semibold mt-1">[80] 1017 197</p>
-
-        <p class="text-gray-500 mt-4 italic">
-          17 Princess Road, London, Greater London<br>
-          NW1 8JR, UK
-        </p>
-      </div>
-
-      <div>
-        <p class="text-gray-500">We Using</p>
-        <p class="font-semibold text-gray-700 text-lg">Safe Payments</p>
-
-        <p class="mt-6 text-gray-500">Secured by:</p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-gray-600">
-          <li><a href="" class="hover:text-gray-800">Support Center</a></li>
-          <li><a href="" class="hover:text-gray-800">Term & Conditions</a></li>
-          <li><a href="" class="hover:text-gray-800">Shipping</a></li>
-          <li><a href="" class="hover:text-gray-800">Privacy Policy</a></li>
-          <li><a href="" class="hover:text-gray-800">Help</a></li>
-          <li><a href="" class="hover:text-gray-800">Products Return</a></li>
-          <li><a href="" class="hover:text-gray-800">FAQS</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Our Stores</h3>
-        <ul class="space-y-2 text-gray-600">
-          <li>New York</li>
-          <li>London SF</li>
-          <li>Cockfosters BP</li>
-          <li>Los Angeles</li>
-          <li>Chicago</li>
-          <li>Las Vegas</li>
-          <li>Albartro</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class=" py-4 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-
-        <p>All Rights Reserved</p>
-
-        <div class="flex items-center gap-5 mt-3 md:mt-0">
-
-          <a href="" class="flex items-center gap-1 hover:text-gray-800">
-            <i class="fa-brands fa-facebook-f"></i> Facebook
-          </a>
-
-          <a href="" class="flex items-center gap-1 hover:text-gray-800">
-            <i class="fa-brands fa-twitter"></i> Twitter
-          </a>
-
-          <a href="" class="flex items-center gap-1 hover:text-gray-800">
-            <i class="fa-brands fa-pinterest-p"></i> Pinterest
-          </a>
-
-          <a href="" class="flex items-center gap-1 hover:text-gray-800">
-            <i class="fa-brands fa-instagram"></i> Instragram
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <script src="./index.js"></script>
 </body>
 
 </html>
